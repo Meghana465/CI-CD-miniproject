@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple E-Commerce</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .product {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      width: 220px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🛒 My E-Commerce Store</h1>
+
+  <div class="container">
+
+    <div class="product">
+      <h2>Laptop</h2>
+      <p>₹50,000</p>
+      <button onclick="addToCart('Laptop')">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <h2>Headphones</h2>
+      <p>₹2,000</p>
+      <button onclick="addToCart('Headphones')">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <h2>Smartphone</h2>
+      <p>₹15,000</p>
+      <button onclick="addToCart('Smartphone')">Add to Cart</button>
+    </div>
+
+  </div>
+
+  <script>
+    function addToCart(product) {
+      alert(product + ' added to cart!');
+    }
+  </script>
+
+</body>
+</html>
